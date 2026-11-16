@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Pages | Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">📚 Pastel Pages</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#library">Library</a>
+            <a href="#favourites">Favourites</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="tagline">YOUR LITTLE CORNER OF KNOWLEDGE ✨</p>
+            <h1>Discover a World<br>Between Pages.</h1>
+            <p>
+                Explore books, discover new ideas
+                and make every day a learning day.
+            </p>
+            <a href="#library" class="main-btn">Explore Library</a>
+        </div>
+
+        <div class="hero-icon">📖</div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="library-section" id="library">
+
+        <h2>Explore Our Library 🌷</h2>
+        <p class="subtitle">Find your next favourite book.</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Search books or authors..."
+        >
+
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category active" data-category="All">All</button>
+            <button class="category" data-category="Technology">Technology</button>
+            <button class="category" data-category="Science">Science</button>
+            <button class="category" data-category="Fiction">Fiction</button>
+            <button class="category" data-category="Education">Education</button>
+        </div>
+
+        <!-- Book Cards -->
+        <div class="book-grid" id="bookGrid"></div>
+
+    </section>
+
+    <!-- Favourites -->
+    <section class="favourites-section" id="favourites">
+        <h2>My Favourite Books 💗</h2>
+        <p class="subtitle">Your saved reading collection.</p>
+        <div class="book-grid" id="favouriteGrid"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>📚 Pastel Pages</h3>
+        <p>Read • Learn • Grow</p>
+        <p>© 2026 Pastel Pages. Made with love.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
